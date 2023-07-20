@@ -6,13 +6,13 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
 }
+
 a:visited {
-    color: antiquewhite;
+    color: rgb(46, 43, 45);
 }
 
-.body { 
+body { 
     font-family: 'Poppins', sans-serif;
 }
 .container {
@@ -41,8 +41,8 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+
 .logo {
     color: #FFFDFC;
     font-size: 25px;
@@ -60,7 +60,7 @@ a:visited {
     display: block;
     font-weight: 600;
 }
-.menu .navbar ul li a:hover{
+.menu .navbar ul li a:hover {
     color: #ce967b;
 }
 #menu {
@@ -106,17 +106,17 @@ a:visited {
     background-color: #ce967b;
 }
 
-.coffe {
+.coffee {
     padding: 100px 0;
     color: #e1e2e6;
     position: relative;
     
 }
-.coffe-content {
+.coffee-content {
     text-align: center;
 }
 
-.coffe-content h2 {
+.coffee-content h2 {
     font-size: 55px;
     line-height: 70px;
     color: #323337;
@@ -132,33 +132,34 @@ a:visited {
     margin-bottom: 35px;
 }
 
-.Grupo-Cafe {
+.coffee-group {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
-.coffe-1 {
+.coffee-1 {
     padding: 0 25px;
 }
 
-.coffe-1 img {
+.coffee-1 img {
     width: 200px;
 }
-.coffe-img { 
+.coffee-img { 
     margin-top: auto;
     position: absolute ;
     top: 0;
     right:  0;
+    width: 350px;
 }
 
-.coffe-1 h3 {
+.coffee-1 h3 {
     color: #323337;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 15px;   
 }
 
-.servicios {
+.services {
     background-image: linear-gradient(
     rgba(0,0,0,0.7),
     rgba(0,0,0,0.7)),
@@ -169,7 +170,10 @@ a:visited {
     background-attachment: fixed;
     padding: 100px 0;
 }
-.servicios-content {
+.services-content{
+    text-align: center;
+}
+.services-content h2 {
     font-size: 55px;
     line-height: 70px;
     color: #f9fafc;
@@ -177,27 +181,27 @@ a:visited {
     margin-bottom: 50px;
 }
 
-.servicios-content p {
+.services-content p {
     font-size: 16px;
-    color: #c5c5c5;
+    color: #e1e2e6;
     margin-bottom: 50px;
     padding: 0 100px;
 }
-.servicios-Grupos {
+.services-group {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
-.servicios-1 {
+.services-1 {
     padding: 0 100px;
 }
-.servicios-1 img {
+.services-1 img {
     width: 25px;
     margin-bottom: 15px;
 }
-.servicios-1 h3 {
-    color: #eaccb3;
+.services-1 h3 {
+    color: #e1e2e6;
     font-size: 18px;
  }
  .general { 
@@ -225,17 +229,17 @@ a:visited {
  }
 
 
- h2 {
+ .h2 {
     font-size: 55px;
     line-height: 70px;
     color: #323337;
     text-transform: uppercase;
     margin-bottom: 20px;
-
  }
- p { 
+
+.p { 
     font-size: 16px;
-    color: #414247;
+    color: #f1f4ff;
     margin: 25px 0 45px 0;
 
  }
@@ -248,24 +252,22 @@ a:visited {
  .blog-content {
     display: flex;
     justify-content: space-between;
-
  }
  .blog-1 {
     padding: 15px 55px;
  }
- .blog-1 img{
+ .blog-1 img {
     width: 250px;
     border-radius: 15px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
-.blog-1 h3{
+.blog-1 h3 {
     font-size: 25px;
     color: #323337;
 }
 .footer {
     padding: 100px 0;
-    color: black;
-
+    background-color: #000000;
 }
 .footer-content {
     display: flex;
@@ -282,8 +284,10 @@ a:visited {
     display: block;
     margin-bottom: 15px;
 }
-@media(max-widht:991px) { 
-    .menu{
+
+@media(max-width:991px) {
+}  
+ .menu{
         padding: 30px;
     }
     .menu label {
@@ -300,7 +304,7 @@ a:visited {
     .menu .mavbar ul il {
         width: 100px;
     }
-    #menu:checked ~.navbar {
+    #menu:checked ~ .navbar {
         display: initial;
     }
     .header {
@@ -320,33 +324,34 @@ a:visited {
 
     }
     
-   .coffe-content {
+   .coffee {
     padding: 30px;
    }
-   .coffe-content h2 {
+
+   .coffee-content h2 {
     padding: 0;
    }
    .txt-p {
     padding: 0;
    }
-   .Grupo-Cafe {
+   .coffee-group {
     flex-direction: column;
     margin-bottom: 0;
    }
-   .coffe-img {
+   .coffee-img {
     display: none;
    }
-   .servicios {
+   .services {
     padding: 30;
    }
-   .servicios-content {
+   .services-content p {
     padding: 0;
    }
-   .servicios-Grupos {
+   .services-group {
     flex-direction: column;
     margin-bottom: 0;
    }
-   .servicios-1 {
+   .services-1 {
     margin-bottom: 25px;
    }
    .general {
@@ -371,10 +376,11 @@ a:visited {
 }
 .footer {
     padding: 30px;
+    
 }
+
 .footer-content {
     flex-direction: column;
     text-align: center;
 }
 
-}
